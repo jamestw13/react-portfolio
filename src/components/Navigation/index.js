@@ -2,12 +2,12 @@ import React from 'react';
 
 function Navigation() {
   return (
-    <nav>
-      <ul>
-        <li>About Me</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-        <li>Resume</li>
+    <nav className="">
+      <ul className="d-flex justify-content-end">
+        <li className="p-2">About Me</li>
+        <li className="p-2">Portfolio</li>
+        <li className="p-2">Contact</li>
+        <li className="p-2">Resume</li>
       </ul>
       {/* and navigation with titles corresponding to different sections of the portfolio WHEN I view the navigation
       titles THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding

@@ -1,4 +1,8 @@
 import React from 'react';
+import About from '../About';
+import Contact from '../Contact';
+import Portfolio from '../Portfolio';
+import Resume from '../Resume';
 
 function Content() {
   return (
@@ -12,6 +16,10 @@ function Content() {
       that this field is required WHEN I enter text into the email address field THEN I receive a notification if I have
       entered an invalid email address WHEN I am presented with the Resume section THEN I see a link to a downloadable
       resume and a list of the developer’s proficiencies
+      <About />
+      <Contact />
+      <Portfolio />
+      <Resume />
     </div>
   );
 }
