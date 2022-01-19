@@ -3,7 +3,7 @@ import React from 'react';
 function Navigation({views, currentView, setCurrentView}) {
   return (
     <nav className="">
-      <ul className="d-flex flex-row justify-content-between">
+      <ul className="d-flex justify-content-between list-unstyled">
         {views.map(view => (
           <li className={`p-2 alert ${(currentView === view && 'alert-primary') || 'alert-secondary'}`} key={view.name}>
             <span onClick={() => setCurrentView(view)}>{view.name}</span>
