@@ -5,7 +5,10 @@ function Navigation({views, currentView, setCurrentView}) {
     <nav className="">
       <ul className="d-flex justify-content-between list-unstyled">
         {views.map(view => (
-          <li className={`p-2 alert ${(currentView === view && 'alert-primary') || 'alert-secondary'}`} key={view.name}>
+          <li
+            className={`p-2 m-2 alert ${(currentView === view && 'alert-primary') || 'alert-secondary'}`}
+            key={view.name}
+          >
             <span onClick={() => setCurrentView(view)}>{view.name}</span>
           </li>
         ))}

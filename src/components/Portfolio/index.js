@@ -25,8 +25,12 @@ function Portfolio() {
       <div></div>
       <ul className="list-unstyled">
         {githubData.map(repo => (
-          <li>
-            <a href={repo.html_url}>{repo.name}</a>
+          <li className="m-2" key={repo.name}>
+            <div>
+              <a href={repo.html_url} className="text-decoration-none">
+                <div className="alert alert-info">{repo.name}</div>
+              </a>
+            </div>
           </li>
         ))}
       </ul>
