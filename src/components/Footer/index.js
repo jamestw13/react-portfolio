@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="bg-dark">
-      <ul className="container-fluid d-flex flex-row justify-content-around list-unstyled bg-light p-10 position-fixed bottom-0 p-10">
+      <ul className="container-fluid d-flex flex-row justify-content-around list-unstyled bg-light p-10 ">
         <li>
           <h4>Find me elsewhere</h4>
         </li>

@@ -10,7 +10,7 @@ function App() {
   const [currentView, setCurrentView] = useState(views[0]);
 
   return (
-    <div>
+    <div className="bg-dark text-light">
       <Header views={views} currentView={currentView} setCurrentView={setCurrentView} />
       <Content currentView={currentView} />
       <Footer />
