@@ -5,7 +5,7 @@ function Footer() {
     <footer className="bg-dark">
       <ul className="container-fluid d-flex flex-row justify-content-around list-unstyled bg-light p-10 ">
         <li>
-          <h4>Find me elsewhere</h4>
+          <h4 className="text-dark">Find me elsewhere</h4>
         </li>
         <li>
           <a className="text-decoration-none" href="https://www.github.com/jamestw13">
