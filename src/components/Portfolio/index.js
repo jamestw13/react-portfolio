@@ -22,16 +22,14 @@ function Portfolio() {
     {id: 6, name: 'boids-quadtree', image: 'boids-quadtree.gif', description: ''},
   ]);
 
-  console.log(repos);
-
   return (
     <section className="w-75 mx-auto my-5">
       <h2>Portfolio</h2>
       <p>A sampling of projects I've contributed to.</p>
 
-      <div className="d-flex align-item-start flex-wrap justify-content-around">
+      <div className="d-flex align-item-start flex-wrap justify-content-center">
         {repos.map(repo => (
-          <div className="card col-5 m-2" key={repo.name}>
+          <div className="card col-5 bg-dark m-2" key={repo.name}>
             <img
               src={require(`../../assets/images/${repo.image}`)}
               className="card-img-top"
@@ -39,7 +37,7 @@ function Portfolio() {
               style={{maxHeight: '200px', maxWidth: 'auto', objectFit: 'cover'}}
             />
             <div className="card-body">
-              <h5 className="card-title text-dark">{repo.name}</h5>
+              <h5 className="card-title text-light">{repo.name}</h5>
               <p className="card-text">{repo.description}</p>
               <div className="d-flex justify-content-center">
                 <a href={repo.deployment || `https://jamestw13.github.io/${repo.name}/`} className="btn btn-info mx-5">

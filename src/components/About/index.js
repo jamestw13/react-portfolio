@@ -6,7 +6,7 @@ function About() {
       <h2>About</h2>
       <div className="d-flex flex-row justify-content-around align-items-center p-5">
         <div className="col-8 col-s-12">
-          <div className="placeholder col-12 bg-light"></div>
+          <div className="placeholder col-12 bg-dark"></div>
           <div className="mx-auto">
             <pre>
               <code>
@@ -15,10 +15,10 @@ function About() {
             </pre>
           </div>
 
-          <div className="placeholder col-12 bg-light placeholder-glow"></div>
+          <div className="placeholder col-12 bg-dark"></div>
         </div>
         <img
-          className="col-4 img-fluid border border-white border-5"
+          className="col-4 img-fluid border border-dark border-5"
           src={require('../../assets/images/composite.png')}
           alt="TJ James but he's living the movie Multiplicity"
         ></img>
