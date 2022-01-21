@@ -21,9 +21,13 @@ function Portfolio() {
     {id: 5, name: 'Taco-Loca-tor', image: 'Taco-Loca-tor.png', description: ''},
     {id: 6, name: 'boids-quadtree', image: 'boids-quadtree.gif', description: ''},
   ]);
+
+  console.log(repos);
+
   return (
-    <div className="w-75 mx-auto">
-      <h2>Portfolio Section</h2>
+    <section className="w-75 mx-auto my-5">
+      <h2>Portfolio</h2>
+      <p>A sampling of projects I've contributed to.</p>
 
       <div className="d-flex align-item-start flex-wrap justify-content-around">
         {repos.map(repo => (
@@ -49,7 +53,7 @@ function Portfolio() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

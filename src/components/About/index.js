@@ -2,33 +2,25 @@ import React from 'react';
 
 function About() {
   return (
-    <>
+    <section className="w-75 mx-auto my-5">
       <h2>About</h2>
       <div className="d-flex flex-row justify-content-around align-items-center p-5">
         <div className="col-8 col-s-12">
-          <div className="placeholder col-12 bg-light placeholder-glow"></div>
-          <ul className="list-unstyled ">
-            <li className="text-info">
-              Who = &#123; <span className="text-warning">TJ James</span> &#125;
-            </li>
-            <li className="text-info">
-              What = &#123; <span className="text-warning">Full Stack Web Developer</span> &#125;
-            </li>
-            <li className="text-info">
-              When = &#123; <span className="text-warning">2021 - Present</span> &#125;
-            </li>
-            <li className="text-info">
-              Where = &#123; <span className="text-warning">Madison, WI and beyond</span> &#125;
-            </li>
-            <li className="text-info">
-              Why = &#123; <span className="text-warning">It's like candy for the brain</span> &#125;
-            </li>
-          </ul>
+          <div className="placeholder col-12 bg-light"></div>
+          <div className="mx-auto">
+            <pre>
+              <code>
+                {`\tabout: {\n\t\twho:\t"TJ James",\n\t\twhat:\t"Full Stack Web Developer",\n\t\twhen:\t"2021 - Present",\n\t\twhere: \t"Madison, WI and beyond:,\n\t\twhy:\t"It's like candy for the brain"\n\t}`}
+              </code>
+            </pre>
+          </div>
+
           <div className="placeholder col-12 bg-light placeholder-glow"></div>
         </div>
         <img
           className="col-4 img-fluid border border-white border-5"
           src={require('../../assets/images/composite.png')}
+          alt="TJ James but he's living the movie Multiplicity"
         ></img>
       </div>
       <div className="d-flex flex-row justify-content-around">
@@ -63,11 +55,10 @@ function About() {
             <h5>GraphQL</h5>
             <h5>MySQL</h5>
             <h5>ORM / ODM</h5>
-            <h5></h5>
           </div>
         </section>
       </div>
-    </>
+    </section>
   );
 }
 
