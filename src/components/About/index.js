@@ -10,7 +10,7 @@ function About() {
           <div className="mx-auto">
             <pre>
               <code>
-                {`\tabout: {\n\t\twho:\t"TJ James",\n\t\twhat:\t"Full Stack Web Developer",\n\t\twhen:\t"2021 - Present",\n\t\twhere: \t"Madison, WI and beyond:,\n\t\twhy:\t"It's like candy for the brain"\n\t}`}
+                {`\tabout: {\n\t\twho:\t"TJ James",\n\t\twhat:\t"Full Stack Developer",\n\t\twhen:\t"2021 - Present",\n\t\twhere: \t"Madison, WI and beyond:,\n\t\twhy:\t"It's like candy for the brain"\n\t}`}
               </code>
             </pre>
           </div>
@@ -27,10 +27,20 @@ function About() {
         <section className="col-5">
           <h2>Personal</h2>
           <p>
-            I'm a passionate learner. I'm always picking up new fun things to do, especially if it's tactile. I also
-            enjoy social activites. That's how I got started in music. Trumpets and guitars always seem to find their
-            way under my fingers, especially if there are others joining in. I get in my share of performances with a
-            few bands around town in my freetime.
+            I started self-studying programming in 2017, learning the basics of Python and earning the Responsive Web
+            Design, JavaScript Algorithms and Data Structures, and Front End Development Libraries certifications from
+            freecodecamp.org. From there I began taking some computer science classes at UW-Madison where I picked up
+            Java. At that time I was hired at Epic Systems in a Quality Assurance role doing black and gray box testing
+            on electronic health record software. I worked on the Care Everywhere and Cosmos applications,
+            interoperability and health data aggregation for research and clinical purposes. This involved more Python
+            as well as SQL and MUMPS programming languages.
+          </p>
+          <p>Wanting to work more directly with code, I took up the UW-Madison Coding Bootcamp in 2021.</p>
+          <p>
+            A passionate learner, I'm always picking up new fun things to do, especially if it's tactile and/or social.
+            That's how I began my initial career as a musician. Trumpets and guitars always seemed to find their way
+            under my fingers and eventually led to me earning a Bachelors and Masters degrees in Music Performance. I do
+            still enjoy performing freelance in my area in a variety of styles and venues.
           </p>
           <p>
             I also keep my hands busy with crafting projects. Starting with crochet and knitting, I worked my way up to
@@ -38,25 +48,7 @@ function About() {
             hiking with friends or in solitude.
           </p>
         </section>
-        <section className="col-5">
-          <h2 className="text-center">Knowledge</h2>
-          <div className="d-flex flex-column mh-25 flex-wrap" style={{height: 250}}>
-            <h5>JS / CSS / HTML</h5>
-            <h5>Node</h5>
-            <h5>Express</h5>
-            <h5>React</h5>
-            <h5>Mongo</h5>
-            <h5>Jest</h5>
-            <h5>JQuery</h5>
-            <h5>JQuery UI</h5>
-            <h5>Bootstrap</h5>
-            <h5>Git / GitHub</h5>
-            <h5>REST APIs</h5>
-            <h5>GraphQL</h5>
-            <h5>MySQL</h5>
-            <h5>ORM / ODM</h5>
-          </div>
-        </section>
+        <section className="col-5"></section>
       </div>
     </section>
   );
