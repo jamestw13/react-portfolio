@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function Portfolio() {
-  const repos = [
-    {id: 1, name: 'photography-portfolio', image: '../../assets/images/photography-portfolio.png', description: ''},
+  const [repos] = useState([
+    {id: 1, name: 'photography-portfolio', image: 'photography-portfolio.png', description: ''},
     {
       id: 2,
       name: 'budget-tracker',
@@ -20,31 +20,36 @@ function Portfolio() {
     {id: 4, name: 'raycasting-demo', image: 'raycasting-demo.gif', description: ''},
     {id: 5, name: 'Taco-Loca-tor', image: 'Taco-Loca-tor.png', description: ''},
     {id: 6, name: 'boids-quadtree', image: 'boids-quadtree.gif', description: ''},
-  ];
+  ]);
   return (
-    <>
+    <div className="w-75 mx-auto">
       <h2>Portfolio Section</h2>
 
-      <ul className="list-unstyled">
+      <div className="d-flex align-item-start flex-wrap justify-content-around">
         {repos.map(repo => (
-          <li className="m-2" key={repo.id}>
-            <div className="card" style={{width: 250}}>
-              <img src={repo.image} className="card-img-top" alt={repo.description} />
-              <div className="card-body">
-                <h5 className="card-title text-dark">{repo.name}</h5>
-                <p className="card-text">{repo.description}</p>
-                <a href={repo.deployment || `https://jamestw13.github.io/${repo.name}/`} className="btn btn-primary">
+          <div className="card col-5 m-2" key={repo.name}>
+            <img
+              src={require(`../../assets/images/${repo.image}`)}
+              className="card-img-top"
+              alt={repo.description}
+              style={{maxHeight: '200px', maxWidth: 'auto', objectFit: 'cover'}}
+            />
+            <div className="card-body">
+              <h5 className="card-title text-dark">{repo.name}</h5>
+              <p className="card-text">{repo.description}</p>
+              <div className="d-flex justify-content-center">
+                <a href={repo.deployment || `https://jamestw13.github.io/${repo.name}/`} className="btn btn-info mx-5">
                   Live Site
                 </a>
-                <a href={`https://github.com/jamestw13/${repo.name}/`} className="btn btn-primary">
+                <a href={`https://github.com/jamestw13/${repo.name}/`} className="btn btn-info mx-5">
                   GitHub Page
                 </a>
               </div>
             </div>
-          </li>
+          </div>
         ))}
-      </ul>
-    </>
+      </div>
+    </div>
   );
 }
 
