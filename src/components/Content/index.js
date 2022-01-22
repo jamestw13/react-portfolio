@@ -15,9 +15,11 @@ function Content({currentView}) {
         return <Contact />;
       case 'resume':
         return <Resume />;
+      default:
+        return <About />;
     }
   }
-  return <div className="py-5 h-100">{selectContent(currentView.name)}</div>;
+  return <div className="py-5 h-100 ">{selectContent(currentView.name)}</div>;
 }
 
 export default Content;

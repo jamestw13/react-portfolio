@@ -20,7 +20,7 @@ function Resume() {
     'P5.js',
   ];
   return (
-    <section className="w-75 mt-5 p-auto mx-auto">
+    <section className="w-75 mt-5 mx-auto">
       <h2>Resume</h2>
       <div className="d-flex flex-row justify-content-center">
         <div className="btn col-5 p-5">

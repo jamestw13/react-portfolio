@@ -30,7 +30,7 @@ function Contact() {
     e.preventDefault();
   }
   return (
-    <section className="w-75 mx-auto my-5">
+    <section className="w-75 mx-auto py-5">
       <h2>Contact</h2>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div className="form-row">
@@ -63,17 +63,17 @@ function Contact() {
             name="message"
             className="form-control"
             rows="5"
-            placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et"
+            placeholder="Your message here"
             defaultValue={message}
             onBlur={handleChange}
           />
         </div>
         {errorMessage && (
           <div>
-            <p className="text-center error-text text-warning">{errorMessage}</p>
+            <p className="alert alert-danger p-1 text-center mt-3">{errorMessage}</p>
           </div>
         )}
-        <button type="submit" className="btn btn-info form-control" data-testid="submit">
+        <button type="submit" className="btn btn-warning form-control" data-testid="submit">
           Submit
         </button>
       </form>
