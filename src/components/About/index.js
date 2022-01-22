@@ -4,8 +4,8 @@ function About() {
   return (
     <section className="w-75 mx-auto my-5">
       <h2>About</h2>
-      <div className="d-flex flex-row justify-content-around align-items-center p-5">
-        <div className="col-8 col-s-12">
+      <div className="d-flex flex-row justify-content-around align-items-center p-5 flex-wrap">
+        <div className="col-6 col-s-12">
           <div className="placeholder col-12 bg-dark"></div>
           <div className="mx-auto">
             <pre>
@@ -18,7 +18,7 @@ function About() {
           <div className="placeholder col-12 bg-dark"></div>
         </div>
         <img
-          className="col-4 img-fluid border border-dark border-5"
+          className="col-6 col-s-12 border border-dark border-5"
           src={require('../../assets/images/composite.png')}
           alt="TJ James but he's living the movie Multiplicity"
         ></img>
