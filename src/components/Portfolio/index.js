@@ -1,9 +1,16 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Project from '../Project';
 
 function Portfolio() {
   const [repos] = useState([
-    {id: 1, name: 'photography-portfolio', image: 'photography-portfolio.png', description: ''},
+    {
+      id: 7,
+      name: 'still-good',
+      deployment: 'https://pacific-bayou-24755.herokuapp.com/',
+      image: 'still-good.png',
+      description: '',
+    },
+    { id: 1, name: 'photography-portfolio', image: 'photography-portfolio.png', description: '' },
     {
       id: 2,
       name: 'budget-tracker',
@@ -18,9 +25,9 @@ function Portfolio() {
       image: 'work-it-done.png',
       description: '',
     },
-    {id: 4, name: 'raycasting-demo', image: 'raycasting-demo.gif', description: ''},
-    {id: 5, name: 'Taco-Loca-tor', image: 'Taco-Loca-tor.png', description: ''},
-    {id: 6, name: 'boids-quadtree', image: 'boids-quadtree.gif', description: ''},
+    { id: 4, name: 'raycasting-demo', image: 'raycasting-demo.gif', description: '' },
+    { id: 5, name: 'Taco-Loca-tor', image: 'Taco-Loca-tor.png', description: '' },
+    { id: 6, name: 'boids-quadtree', image: 'boids-quadtree.gif', description: '' },
   ]);
 
   return (
