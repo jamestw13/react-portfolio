@@ -19,7 +19,7 @@ function About() {
         </div>
         <img
           className="col-6 col-s-12 border border-dark border-5"
-          src={require('../../assets/images/composite.png')}
+          src={require('../assets/images/composite.png')}
           alt="TJ James but he's living the movie Multiplicity"
         ></img>
       </div>

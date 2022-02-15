@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
-import {validateEmail} from '../../utils/helpers';
+import React, { useState } from 'react';
+import { validateEmail } from '../utils/helpers';
 
 function Contact() {
-  const [formState, setFormState] = useState({name: '', email: '', message: ''});
-  const {name, email, message} = formState;
+  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  const { name, email, message } = formState;
   const [errorMessage, setErrorMessage] = useState('');
 
   function handleChange(e) {
@@ -22,7 +22,7 @@ function Contact() {
       }
     }
     if (!errorMessage) {
-      setFormState({...formState, [e.target.name]: e.target.value});
+      setFormState({ ...formState, [e.target.name]: e.target.value });
     }
   }
 
