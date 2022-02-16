@@ -1,46 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Project from '../components/Project';
+import repos from '../assets/data/Repos'
+
+import {Typography} from '@mui/material'
 
 function Projects() {
-  const [repos] = useState([
-    {
-      id: 7,
-      name: 'still-good',
-      deployment: 'https://pacific-bayou-24755.herokuapp.com/',
-      image: 'still-good.png',
-      description: '',
-    },
-    { id: 1, name: 'photography-portfolio', image: 'photography-portfolio.png', description: '' },
-    {
-      id: 2,
-      name: 'budget-tracker',
-      deployment: 'https://gentle-anchorage-42130.herokuapp.com/',
-      image: 'budget-tracker.png',
-      description: '',
-    },
-    {
-      id: 3,
-      name: 'work-it-done',
-      deployment: 'https://warm-eyrie-07140.herokuapp.com/',
-      image: 'work-it-done.png',
-      description: '',
-    },
-    { id: 4, name: 'raycasting-demo', image: 'raycasting-demo.gif', description: '' },
-    { id: 5, name: 'Taco-Loca-tor', image: 'Taco-Loca-tor.png', description: '' },
-    { id: 6, name: 'boids-quadtree', image: 'boids-quadtree.gif', description: '' },
-  ]);
+  
 
   return (
-    <section className="w-75 mx-auto my-5">
-      <h2>Portfolio</h2>
-      <p>A sampling of projects I've contributed to.</p>
-
-      <div className="d-flex align-item-start flex-wrap justify-content-center">
+    <>
+      <Typography variant='h5'>Portfolio</Typography>
+      <Typography variant='p'>A sampling of projects I've contributed to.</Typography>
         {repos.map(repo => (
           <Project repo={repo} key={repo.name} />
         ))}
-      </div>
-    </section>
+    </>
   );
 }
 
