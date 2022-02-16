@@ -32,11 +32,11 @@ function Header({ views, currentView, setCurrentView }) {
               anchorEl={anchorElNav}
               keepMounted
               open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              // onClose={handleCloseNavMenu}
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {views.map(view => (
-                <MenuItem key={view} onClick={setCurrentView(view)}>
+                <MenuItem key={view} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{view}</Typography>
                 </MenuItem>
               ))}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Project from '../components/Project';
 
-function Portfolio() {
+function Projects() {
   const [repos] = useState([
     {
       id: 7,
@@ -44,4 +44,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Projects;

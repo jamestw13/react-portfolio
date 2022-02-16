@@ -7,9 +7,10 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import NoMatch from './pages/NoMatch';
 import Footer from './components/Footer';
+import Contact from './pages/Contact'
 
 function App() {
-  const [views] = useState(['about', 'portfolio', 'contact', 'resume']);
+  const [views] = useState(['about', 'projects', 'contact', 'resume']);
 
   const [currentView, setCurrentView] = useState(views[0]);
 
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" element={'<home/>'} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/projects" element={<Projects />} />
+          <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/*" element={<NoMatch />} />
         </Routes>
 
