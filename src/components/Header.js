@@ -10,7 +10,8 @@ function Header({ views, currentView, setCurrentView }) {
   }
 
   function handleCloseNavMenu(event) {
-    console.log(event);
+    console.log(event.target.innerText);
+    window.location.assign(`/${event.target.innerText}`)
     setAnchorElNav(null);
   }
 
