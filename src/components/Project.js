@@ -4,10 +4,10 @@ import {OpenInBrowser, GitHub} from '@mui/icons-material'
 
 function Project({repo}) {
   return (
-    <Card sx={{maxWidth: 500}}>
+    <Card sx={{maxWidth: 600}}>
       <CardHeader title={repo.name} />
         
-        <CardMedia component='img' image={require(`../assets/images/${repo.image}`)}/>
+        <CardMedia component='img' sx={{maxHeight: 300}} image={require(`../assets/images/${repo.image}`)}/>
         <CardContent>
         <Typography variant='p' >{repo.description}</Typography>
         
@@ -15,13 +15,13 @@ function Project({repo}) {
         </CardContent>
         <CardActions>
           <Button 
-          onClick={repo.deployment || `https://jamestw13.github.io/${repo.name}/`} 
+          onClick={()=>window.open(repo.deployment || `https://jamestw13.github.io/${repo.name}/`, '_blank').focus()} 
           startIcon={  <OpenInBrowser/>}
           >
             Live Deployment
           </Button>
           <Button 
-          onClick={`https://github.com/jamestw13/${repo.name}/`}
+          onClick={() => window.open(`https://github.com/jamestw13/${repo.name}/`, '_blank').focus()}
           startIcon={            <GitHub/>          }
           >
             GitHub Repo
