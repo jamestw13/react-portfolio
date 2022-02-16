@@ -1,9 +1,10 @@
 import React from 'react';
+import {Stack, Box, Typography} from '@mui/material'
 
 function About() {
   return (
-    <section className="w-75 mx-auto my-5">
-      <h2>About</h2>
+    <Stack padding={2}>
+      <Typography variant='h5'>About</Typography>
       <div className="d-flex flex-row justify-content-around align-items-center p-5 flex-wrap">
         <div className="col-6 col-s-12">
           <div className="placeholder col-12 bg-dark"></div>
@@ -17,11 +18,15 @@ function About() {
 
           <div className="placeholder col-12 bg-dark"></div>
         </div>
-        <img
+        <Box maxWidth='400px'>
+
+        {/* <img
+        maxWidth='300px'
           className="col-6 col-s-12 border border-dark border-5"
           src={require('../assets/images/composite.png')}
           alt="TJ James but he's living the movie Multiplicity"
-        ></img>
+          ></img> */}
+          </Box>
       </div>
       <div className="d-flex flex-row justify-content-around">
         <section className="col-5">
@@ -50,7 +55,7 @@ function About() {
         </section>
         <section className="col-5"></section>
       </div>
-    </section>
+    </Stack>
   );
 }
 

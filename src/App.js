@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {Stack} from '@mui/material'
 
 import Header from './components/Header';
 import About from './pages/About';
@@ -15,20 +15,20 @@ function App() {
   const [currentView, setCurrentView] = useState(views[0]);
 
   return (
-    <div className="bg-light text-dark">
-      <Router>
+    <Stack spacing={3} alignItems='center' backgroundColor='#000000' color="#FFFFFF">
+      
         <Header currentView={currentView} views={views} setCurrentView={setCurrentView} />
-        <Routes>
-          <Route exact path="/" element={'<home/>'} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/projects" element={<Projects />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/*" element={<NoMatch />} />
-        </Routes>
+      
+          
+          <About />
+          <Projects />
+          <Contact />
+      
+      
 
         <Footer />
-      </Router>
-    </div>
+      
+    </Stack>
   );
 }
 

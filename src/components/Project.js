@@ -4,7 +4,7 @@ import {OpenInBrowser, GitHub} from '@mui/icons-material'
 
 function Project({repo}) {
   return (
-    <Card sx={{maxWidth: 600}}>
+    <Card sx={{minWidth: 300, maxWidth: 600}}>
       <CardHeader title={repo.name} />
         
         <CardMedia component='img' sx={{maxHeight: 300}} image={require(`../assets/images/${repo.image}`)}/>
