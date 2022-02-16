@@ -1,35 +1,53 @@
 import React from 'react';
-import {Card, CardHeader, CardMedia, CardContent, CardActions, Typography, Button } from '@mui/material'
-import {OpenInBrowser, GitHub} from '@mui/icons-material'
+import {
+  Card,
+  CardHeader,
+  CardMedia,
+  CardContent,
+  CardActions,
+  Typography,
+  Button,
+} from '@mui/material';
+import { OpenInNew, GitHub } from '@mui/icons-material';
 
-function Project({repo}) {
+function Project({ repo }) {
   return (
-    <Card sx={{minWidth: 300, maxWidth: 600}}>
+    <Card sx={{ minWidth: 300, maxWidth: 600, margin: 10 }}>
       <CardHeader title={repo.name} />
-        
-        <CardMedia component='img' sx={{maxHeight: 300}} image={require(`../assets/images/${repo.image}`)}/>
-        <CardContent>
-        <Typography variant='p' >{repo.description}</Typography>
-        
 
-        </CardContent>
-        <CardActions>
-          <Button 
-          onClick={()=>window.open(repo.deployment || `https://jamestw13.github.io/${repo.name}/`, '_blank').focus()} 
-          startIcon={  <OpenInBrowser/>}
-          >
-            Live Deployment
-          </Button>
-          <Button 
-          onClick={() => window.open(`https://github.com/jamestw13/${repo.name}/`, '_blank').focus()}
-          startIcon={            <GitHub/>          }
-          >
-            GitHub Repo
-          </Button>
-        </CardActions>
-      
-        
-      
+      <CardMedia
+        component='img'
+        sx={{ maxHeight: 300 }}
+        image={require(`../assets/images/${repo.image}`)}
+      />
+      <CardContent>
+        <Typography variant='p'>{repo.description}</Typography>
+      </CardContent>
+      <CardActions>
+        <Button
+          onClick={() =>
+            window
+              .open(
+                repo.deployment || `https://jamestw13.github.io/${repo.name}/`,
+                '_blank'
+              )
+              .focus()
+          }
+          startIcon={<OpenInNew />}
+        >
+          Live Deployment
+        </Button>
+        <Button
+          onClick={() =>
+            window
+              .open(`https://github.com/jamestw13/${repo.name}/`, '_blank')
+              .focus()
+          }
+          startIcon={<GitHub />}
+        >
+          GitHub Repo
+        </Button>
+      </CardActions>
     </Card>
   );
 }
