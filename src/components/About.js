@@ -1,9 +1,9 @@
 import React from 'react';
-import { Stack, Box, Typography, Grid } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 
 function About() {
   return (
-    <Grid container alignItems='center' spacing={20} alignItems='center'>
+    <Grid container alignItems='center' spacing={10}>
       <Grid item xs={12} md={7}>
         <Typography variant='h2'>About me</Typography>
         <Typography variant='p'>

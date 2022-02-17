@@ -14,9 +14,9 @@ function Projects() {
         </Typography>
         {repos.map((repo, index) =>
           index % 2 === 0 ? (
-            <Project repo={repo} key={repo.id} direction={'left'} />
+            <Project repo={repo} key={repo.id} isEven={true} />
           ) : (
-            <Project repo={repo} key={repo.id} direction={'right'} />
+            <Project repo={repo} key={repo.id} isEven={false} />
           )
         )}
       </Stack>
