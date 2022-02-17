@@ -1,16 +1,12 @@
 import React from 'react';
 import Project from './Project';
-import repos from '../assets/data/Repos';
+import repos from '../assets/data/repos';
 
 import { Stack, Typography } from '@mui/material';
 
 function Projects() {
   return (
-    <Stack
-      spacing={2}
-      alignItems='center'
-      sx={{ maxWidth: 1500, backgroundColor: 'primary.dark', padding: 10 }}
-    >
+    <Stack spacing={2} alignItems='center' sx={{ maxWidth: 1500, padding: 10 }}>
       <Typography variant='h5'>Portfolio</Typography>
       <Typography variant='p'>
         A sampling of projects I've contributed to.
