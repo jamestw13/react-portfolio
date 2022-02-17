@@ -25,15 +25,15 @@ function App() {
         views={views}
         setCurrentView={setCurrentView}
       />
-      <Hero />
-      <Box alignItems='center'>
-        <Stack maxWidth='1500px' spacing={3} alignItems='center' margin='auto'>
-          <About />
-          <Projects />
-          <Contact />
-          <Resume />
-        </Stack>
-      </Box>
+
+      <Stack maxWidth='1500px' spacing={3} alignItems='center' margin='auto'>
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+        <Resume />
+      </Stack>
+
       <Footer />
     </ThemeProvider>
   );

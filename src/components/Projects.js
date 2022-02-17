@@ -6,15 +6,21 @@ import { Stack, Typography } from '@mui/material';
 
 function Projects() {
   return (
-    <Stack spacing={2} alignItems='center' sx={{ maxWidth: 1500, padding: 10 }}>
-      <Typography variant='h5'>Portfolio</Typography>
-      <Typography variant='p'>
-        A sampling of projects I've contributed to.
-      </Typography>
-      {repos.map(repo => (
-        <Project repo={repo} key={repo.name} />
-      ))}
-    </Stack>
+    <section>
+      <Typography variant='h2'>My Work</Typography>
+      <Stack spacing={10} alignItems='center' sx={{ maxWidth: 1500 }}>
+        <Typography variant='h5'>
+          Some samples of projects I've contributed to.
+        </Typography>
+        {repos.map((repo, index) =>
+          index % 2 === 0 ? (
+            <Project repo={repo} key={repo.id} direction={'left'} />
+          ) : (
+            <Project repo={repo} key={repo.id} direction={'right'} />
+          )
+        )}
+      </Stack>
+    </section>
   );
 }
 

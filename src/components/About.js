@@ -3,7 +3,7 @@ import { Stack, Box, Typography, Grid } from '@mui/material';
 
 function About() {
   return (
-    <Grid container alignItems='center' spacing={20}>
+    <Grid container alignItems='center' spacing={20} alignItems='center'>
       <Grid item xs={12} md={7}>
         <Typography variant='h2'>About me</Typography>
         <Typography variant='p'>
@@ -38,11 +38,13 @@ function About() {
         </Typography>
       </Grid>
       <Grid item xs={12} md={5}>
-        <img
-          src={require('../assets/images/tj-pic.jpg')}
-          alt=''
-          style={{ maxWidth: '50%' }}
-        />
+        <div className='profile-img-container'>
+          <img
+            className='profile-img'
+            src={require('../assets/images/tj-pic.jpg')}
+            alt=''
+          />
+        </div>
       </Grid>
       <section className='col-5'></section>
     </Grid>
