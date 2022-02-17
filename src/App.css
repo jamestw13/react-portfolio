@@ -7,3 +7,11 @@
   height: 15px;
   background-color: aliceblue;
 }
+
+img {
+  filter: grayscale(100%);
+}
+
+img:hover {
+  filter: grayscale(10%);
+}
