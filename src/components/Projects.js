@@ -6,7 +6,7 @@ import { Stack, Typography } from '@mui/material';
 
 function Projects() {
   return (
-    <section>
+    <section id='projects'>
       <Typography variant='h2'>My Work</Typography>
       <Stack spacing={10} alignItems='center' sx={{ maxWidth: 1500 }}>
         <Typography variant='h5'>

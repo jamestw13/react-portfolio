@@ -5,9 +5,8 @@ import { Stack, ThemeProvider, CssBaseline } from '@mui/material';
 import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
-import Footer from './components/Footer';
+
 import Contact from './components/Contact';
-import Resume from './components/Resume';
 
 import theme from './assets/data/theme';
 import Hero from './components/Hero';
@@ -31,10 +30,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
-        <Resume />
       </Stack>
-
-      <Footer />
     </ThemeProvider>
   );
 }

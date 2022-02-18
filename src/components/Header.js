@@ -20,6 +20,7 @@ function Header({ views, currentView, setCurrentView }) {
   }
 
   function handleCloseNavMenu(event) {
+    if (event) window.location.assign(`/#${event.target.innerText}`);
     console.log(event.target.innerText);
     setAnchorElNav(null);
   }
@@ -50,12 +51,14 @@ function Header({ views, currentView, setCurrentView }) {
               anchorEl={anchorElNav}
               keepMounted
               open={Boolean(anchorElNav)}
-              // onClose={handleCloseNavMenu}
+              onClose={handleCloseNavMenu}
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {views.map(view => (
                 <MenuItem key={view} onClick={handleCloseNavMenu}>
-                  <Typography textAlign='center'>{view}</Typography>
+                  <Typography color='navy' textAlign='center'>
+                    {view}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>

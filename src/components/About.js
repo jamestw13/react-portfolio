@@ -3,7 +3,7 @@ import { Typography, Grid } from '@mui/material';
 
 function About() {
   return (
-    <Grid container alignItems='center' spacing={10}>
+    <Grid id='about' container alignItems='center' spacing={10}>
       <Grid item xs={12} md={7}>
         <Typography variant='h2'>About me</Typography>
         <Typography variant='p'>

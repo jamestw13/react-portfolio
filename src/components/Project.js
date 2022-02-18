@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Stack, Typography, Button, Box, Container } from '@mui/material';
+import { Grid, Stack, Typography, Button, Box } from '@mui/material';
 import { OpenInNew, GitHub } from '@mui/icons-material';
 
 function Project({ repo, isEven }) {
@@ -11,14 +11,14 @@ function Project({ repo, isEven }) {
         alignItems='center'
         flexDirection={isEven ? 'row' : 'row-reverse'}
       >
-        <Grid item xs={12} md={7} className='project-img-container'>
+        <Grid item xs={12} sm={7} className='project-img-container'>
           <img
             className='project-img'
             alt={repo.description}
             src={require(`../assets/images/${repo.image}`)}
           />
         </Grid>
-        <Grid item xs={12} md={5} className='project-info'>
+        <Grid item xs={12} sm={5} className='project-info'>
           <Stack>
             <Box className='title-box'>
               <Typography variant='h4' textAlign={isEven ? 'right' : 'left'}>
@@ -38,10 +38,7 @@ function Project({ repo, isEven }) {
               )}
             </div>
 
-            <div
-              className='project-links'
-              alignItems={isEven ? 'right' : 'left'}
-            >
+            <div className='project-links'>
               <Button
                 variant='contained'
                 onClick={() =>

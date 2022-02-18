@@ -14,6 +14,15 @@ img {
   filter: grayscale(50%);
 }
 
+a {
+  text-decoration: none;
+  color: #00e676;
+}
+
+a:visited {
+  color: none;
+}
+
 img:hover {
   opacity: 1;
   filter: grayscale(0%);
@@ -26,8 +35,8 @@ img:hover {
 
 .profile-img-container {
   border-radius: 3px;
-  height: 315px;
-  width: 292px;
+  height: 472px;
+  width: 438px;
   position: relative;
   background: #00e676;
 }
@@ -67,6 +76,7 @@ img:hover {
 
 .project-container {
   border: 2px solid white;
+  padding: 15px;
 }
 
 .title-box {
@@ -97,4 +107,11 @@ img:hover {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.link-container {
+  padding: 10px;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-around;
 }
