@@ -11,7 +11,8 @@
 img {
   border-radius: 3px;
   opacity: 0.5;
-  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
 }
 
 a {
@@ -25,12 +26,21 @@ a:visited {
 
 img:hover {
   opacity: 1;
-  filter: grayscale(0%);
-  transform: scale(103%);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transform: scale(103%);
+          transform: scale(103%);
   border: 3px solid #00e676;
+  -webkit-transition: opacity ease-out 250ms;
   transition: opacity ease-out 250ms;
+  -webkit-transition: -webkit-filter ease-out 250ms;
+  transition: -webkit-filter ease-out 250ms;
   transition: filter ease-out 250ms;
+  transition: filter ease-out 250ms, -webkit-filter ease-out 250ms;
+  -webkit-transition: -webkit-transform ease-out 250ms;
+  transition: -webkit-transform ease-out 250ms;
   transition: transform ease-out 250ms;
+  transition: transform ease-out 250ms, -webkit-transform ease-out 250ms;
 }
 
 .profile-img-container {
@@ -47,7 +57,6 @@ img:hover {
   right: 0;
   bottom: 0;
   left: 0;
-
   height: 100%;
   width: 100%;
 }
@@ -67,9 +76,10 @@ img:hover {
   right: 0;
   bottom: 0;
   left: 0;
-
-  object-fit: none;
-  object-position: top;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: top;
+     object-position: top;
   height: 100%;
   width: 100%;
 }
@@ -88,7 +98,6 @@ img:hover {
 
 .description-box {
   padding: 15px;
-
   background: #00e676;
   color: black;
 }
@@ -98,20 +107,34 @@ img:hover {
 }
 
 .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .tech-stack-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .link-container {
   padding: 10px;
   font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+/*# sourceMappingURL=App.css.map */

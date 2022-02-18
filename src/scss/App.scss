@@ -1,0 +1,119 @@
+@import './variables';
+
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.spacer {
+  height: 15px;
+  background-color: $primary-color;
+}
+
+img {
+  border-radius: 3px;
+  opacity: 0.5;
+  filter: grayscale(50%);
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+a:visited {
+  color: none;
+}
+
+img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(103%);
+  border: 3px solid #00e676;
+  transition: opacity ease-out 250ms;
+  transition: filter ease-out 250ms;
+  transition: transform ease-out 250ms;
+}
+
+.profile-img-container {
+  border-radius: 3px;
+  height: 472px;
+  width: 438px;
+  position: relative;
+  background: #00e676;
+}
+
+.profile-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+}
+
+.project-img-container {
+  border-radius: 3px;
+  position: relative;
+  background: #00e676;
+  width: 400px;
+  height: 300px;
+}
+
+.project-img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  object-fit: none;
+  object-position: top;
+  height: 100%;
+  width: 100%;
+}
+
+.project-container {
+  border: 2px solid white;
+  padding: 15px;
+}
+
+.title-box {
+  background: black;
+  color: #00e676;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.description-box {
+  padding: 15px;
+
+  background: #00e676;
+  color: black;
+}
+
+.project-info {
+  z-index: 3;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tech-stack-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.link-container {
+  padding: 10px;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-around;
+}
