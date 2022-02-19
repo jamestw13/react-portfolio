@@ -2,7 +2,8 @@ import React from 'react';
 
 function Project({ repo }) {
   return (
-    <article id='projects' className='project-container'>
+    <article className='project-container'>
+      {/* Project Image */}
       <div className='project-img-container'>
         <img
           className='project-img'
@@ -10,6 +11,7 @@ function Project({ repo }) {
           src={require(`../assets/images/${repo.image}`)}
         />
       </div>
+      {/* Project Info */}
       <div className='project-info'>
         <div className='title-box'>
           <h4>{repo.name}</h4>
@@ -18,11 +20,8 @@ function Project({ repo }) {
           <p>{repo.description}</p>
         </div>
         <div className='tech-stack-box'>
-          {repo.techStack ? (
-            repo.techStack.map(tech => <div key={tech}>{tech}</div>)
-          ) : (
-            <p></p>
-          )}
+          {repo.techStack &&
+            repo.techStack.map(tech => <div key={tech}>{tech}</div>)}
         </div>
 
         <div className='project-links'>
@@ -55,6 +54,7 @@ function Project({ repo }) {
           </button>
         </div>
       </div>
+      <div className='project-spacer'></div>
     </article>
   );
 }

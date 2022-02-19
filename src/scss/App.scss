@@ -4,26 +4,6 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 500px) {
-  .nav-xs {
-    display: initial;
-  }
-  .nav-sm {
-    display: none;
-  }
-}
-
-@media (min-width: 500px) {
-  .nav-xs {
-    display: none;
-  }
-  .nav-sm {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-}
-
 body {
   background-color: $primary-background;
   color: $text-light;
@@ -103,6 +83,7 @@ img:hover {
 #about-section {
   width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -131,11 +112,29 @@ img:hover {
   width: 100%;
 }
 
+.projects-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container {
+  padding: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+
 .project-img-container {
+  margin: 5px;
   border-radius: 3px;
   position: relative;
-  background: $primary-background;
-  width: 400px;
+  background: $accent-color;
+  width: 55%;
   height: 300px;
 }
 
@@ -153,16 +152,10 @@ img:hover {
   width: 100%;
 }
 
-.projects-container {
-  display: flex;
-  flex-direction: column;
-}
-.project-container {
-  &:nth-child(odd) {
-    flex-direction: row-reverse;
-  }
-  border: 2px solid white;
-  padding: 15px;
+.project-info {
+  width: 40%;
+  margin: 5px;
+  z-index: 3;
 }
 
 .title-box {
@@ -177,10 +170,6 @@ img:hover {
 
   background: $primary-background;
   color: black;
-}
-
-.project-info {
-  z-index: 3;
 }
 
 .project-links {
@@ -200,4 +189,42 @@ img:hover {
   font-size: 40px;
   display: flex;
   justify-content: space-around;
+}
+
+.project-spacer {
+  width: 5%;
+}
+
+@media (max-width: 600px) {
+  .nav-xs {
+    display: initial;
+  }
+  .nav-sm {
+    display: none;
+  }
+
+  .project-container,
+  .project-container:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  #about-section {
+    flex-direction: column;
+  }
+  .profile-img-container,
+  .project-img-container,
+  .project-info,
+  .project-spacer {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .nav-xs {
+    display: none;
+  }
+  .nav-sm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
