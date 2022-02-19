@@ -40,10 +40,12 @@ section {
   width: 90%;
 }
 
-h1 {
-}
-button {
-  display: contents;
+.nav-button {
+  padding: 5px;
+
+  &:hover {
+    background-color: $text-dark;
+  }
 }
 .menu-icon {
   width: 50px;
@@ -58,6 +60,7 @@ button {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5px 10px;
 }
 
@@ -74,11 +77,11 @@ img {
 
 a {
   text-decoration: none;
-  color: $primary-background;
-}
+  color: $text-light;
 
-a:visited {
-  color: none;
+  &:visited {
+    color: none;
+  }
 }
 
 img:hover {

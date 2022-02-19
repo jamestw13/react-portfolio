@@ -26,9 +26,9 @@ function Header() {
         {menuState && (
           <div>
             {views.map(view => (
-              <button key={view}>
-                <span textAlign='center'>{view}</span>
-              </button>
+              <div className='nav-button' key={view}>
+                <a href={`#${view}`}>{view}</a>
+              </div>
             ))}
           </div>
         )}
@@ -37,9 +37,9 @@ function Header() {
       {/* Medium and larger view */}
       <nav className='nav-sm'>
         {views.map(view => (
-          <button key={view}>
+          <div className='nav-button' key={view}>
             <a href={`#${view}`}>{view}</a>
-          </button>
+          </div>
         ))}
       </nav>
     </header>

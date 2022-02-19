@@ -52,8 +52,12 @@ section {
   width: 90%;
 }
 
-button {
-  display: contents;
+.nav-button {
+  padding: 5px;
+}
+
+.nav-button:hover {
+  background-color: #878787;
 }
 
 .menu-icon {
@@ -73,6 +77,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px 10px;
 }
 
@@ -90,7 +97,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #202022;
+  color: #cacaca;
 }
 
 a:visited {
