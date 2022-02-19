@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 
 function Hero() {
   return (
-    <Box minWidth='600px' maxWidth='900px' margin='100px 20px 20px 150px'>
+    <section id='hero-section'>
       <div className='spacer'></div>
       <pre>
         <code>
@@ -19,7 +19,7 @@ function Hero() {
         </code>
       </pre>
       <div className='spacer'></div>
-    </Box>
+    </section>
   );
 }
 

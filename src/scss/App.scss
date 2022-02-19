@@ -64,6 +64,12 @@ header {
   padding: 5px 10px;
 }
 
+#hero-section {
+  min-width: 600px;
+  max-width: 900px;
+  margin: 100px 20px 20px 150px;
+}
+
 .spacer {
   height: 15px;
   background-color: $accent-color;
@@ -147,7 +153,14 @@ img:hover {
   width: 100%;
 }
 
+.projects-container {
+  display: flex;
+  flex-direction: column;
+}
 .project-container {
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
   border: 2px solid white;
   padding: 15px;
 }
