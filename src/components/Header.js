@@ -37,8 +37,8 @@ function Header() {
       {/* Medium and larger view */}
       <nav className='nav-sm'>
         {views.map(view => (
-          <button key={view} sx={{ my: 2, color: 'white', display: 'block' }}>
-            {view}
+          <button key={view}>
+            <a href={`#${view}`}>{view}</a>
           </button>
         ))}
       </nav>

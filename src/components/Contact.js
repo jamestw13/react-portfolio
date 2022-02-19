@@ -1,14 +1,10 @@
 import React from 'react';
 
-import { Box, Typography } from '@mui/material';
-
 function Contact() {
   return (
-    <Box minWidth='600px' maxWidth='900px' className='contact-section'>
-      <Typography variant='h2'>Contact Info</Typography>
-      <Typography variant='p' margin={12} padding={10}>
-        Contact or follow me in the following spaces
-      </Typography>
+    <section id='contact'>
+      <h2>Contact Info</h2>
+      <p>Contact or follow me in the following spaces</p>
       <div className='link-container'>
         <a href='https://www.github.com/jamestw13'>
           <svg
@@ -42,7 +38,7 @@ function Contact() {
           Twitter
         </a>
       </div>
-    </Box>
+    </section>
   );
 }
 

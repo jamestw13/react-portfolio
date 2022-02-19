@@ -3,7 +3,7 @@ import { Grid, Stack, Typography, Button, Box } from '@mui/material';
 
 function Project({ repo, isEven }) {
   return (
-    <>
+    <section id='projects'>
       <Grid
         className='project-container'
         container
@@ -73,7 +73,7 @@ function Project({ repo, isEven }) {
           </Stack>
         </Grid>
       </Grid>
-    </>
+    </section>
   );
 }
 
