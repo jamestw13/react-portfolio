@@ -1,13 +1,69 @@
 @import './variables';
 
-.App {
-  text-align: center;
-  height: 100%;
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+  .nav-xs {
+    display: initial;
+  }
+  .nav-sm {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .nav-xs {
+    display: none;
+  }
+  .nav-sm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+body {
+  background-color: $primary-background;
+  color: $text-light;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+section {
+  width: 90%;
+}
+
+h1 {
+}
+button {
+  display: contents;
+}
+.menu-icon {
+  width: 50px;
+  height: 50px;
+  background-color: $primary-background;
+}
+
+.menu-icon-path {
+  fill: $accent-color;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
 }
 
 .spacer {
   height: 15px;
-  background-color: $primary-color;
+  background-color: $accent-color;
 }
 
 img {
@@ -18,7 +74,7 @@ img {
 
 a {
   text-decoration: none;
-  color: $primary-color;
+  color: $primary-background;
 }
 
 a:visited {
@@ -29,35 +85,47 @@ img:hover {
   opacity: 1;
   filter: grayscale(0%);
   transform: scale(103%);
-  border: 3px solid #00e676;
+  border: 3px solid $accent-color;
   transition: opacity ease-out 250ms;
   transition: filter ease-out 250ms;
   transition: transform ease-out 250ms;
 }
 
+#about-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.about-text {
+  width: 75%;
+  padding: 10px;
+}
+
 .profile-img-container {
   border-radius: 3px;
-  height: 472px;
-  width: 438px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  background: #00e676;
+  background: $accent-color;
+  margin: 20px;
 }
 
 .profile-img {
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 
-  height: 100%;
   width: 100%;
 }
 
 .project-img-container {
   border-radius: 3px;
   position: relative;
-  background: #00e676;
+  background: $primary-background;
   width: 400px;
   height: 300px;
 }
@@ -83,7 +151,7 @@ img:hover {
 
 .title-box {
   background: black;
-  color: #00e676;
+  color: $primary-background;
   border-radius: 3px;
   padding: 15px;
 }
@@ -91,7 +159,7 @@ img:hover {
 .description-box {
   padding: 15px;
 
-  background: #00e676;
+  background: $primary-background;
   color: black;
 }
 
