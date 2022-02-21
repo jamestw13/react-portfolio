@@ -16,10 +16,15 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
+}
+
+h2 {
+  color: #00bbc9;
 }
 
 section {
@@ -55,6 +60,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 5px 10px;
+  margin: 0 20px;
 }
 
 #hero-section {
@@ -169,6 +175,14 @@ img:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-container .title-box,
+.project-container .description-box {
+  text-align: right;
 }
 
 .project-container:nth-child(odd) {
@@ -176,6 +190,11 @@ img:hover {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.project-container:nth-child(odd) .title-box,
+.project-container:nth-child(odd) .description-box {
+  text-align: left;
 }
 
 .project-img-container {
@@ -196,8 +215,8 @@ img:hover {
   left: 0;
   -o-object-fit: none;
      object-fit: none;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: left;
+     object-position: left;
   height: 100%;
   width: 100%;
 }
@@ -209,24 +228,31 @@ img:hover {
 }
 
 .title-box {
-  background: black;
+  background: #cacaca;
   color: #202022;
+  font-size: 1.5rem;
   border-radius: 3px;
-  padding: 15px;
+  padding: 1px 15px;
+  margin: 5px;
 }
 
 .description-box {
   padding: 15px;
-  background: #202022;
-  color: black;
+  background: #00747c;
+  color: #cacaca;
 }
 
-.project-links {
+.project-link-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.project-link {
+  fill: #00bbc9;
+  width: 30px;
 }
 
 .tech-stack-box {
@@ -251,10 +277,6 @@ img:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.project-spacer {
-  width: 5%;
 }
 
 @media (max-width: 600px) {

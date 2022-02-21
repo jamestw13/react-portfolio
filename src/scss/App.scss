@@ -12,8 +12,13 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  margin: auto;
   align-items: center;
   width: 90%;
+}
+
+h2 {
+  color: $text-blue;
 }
 
 section {
@@ -42,6 +47,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
+  margin: 0 20px;
 }
 
 #hero-section {
@@ -123,9 +129,20 @@ img:hover {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
+
+  .title-box,
+  .description-box {
+    text-align: right;
+  }
 
   &:nth-child(odd) {
     flex-direction: row-reverse;
+
+    .title-box,
+    .description-box {
+      text-align: left;
+    }
   }
 }
 
@@ -147,7 +164,7 @@ img:hover {
   left: 0;
 
   object-fit: none;
-  object-position: top;
+  object-position: left;
   height: 100%;
   width: 100%;
 }
@@ -159,22 +176,30 @@ img:hover {
 }
 
 .title-box {
-  background: black;
+  background: $text-light;
   color: $primary-background;
+  font-size: 1.5rem;
   border-radius: 3px;
-  padding: 15px;
+  padding: 1px 15px;
+  margin: 5px;
 }
 
 .description-box {
   padding: 15px;
 
-  background: $primary-background;
-  color: black;
+  background: $accent-color;
+  color: $text-light;
 }
 
-.project-links {
+.project-link-container {
   display: flex;
   justify-content: space-around;
+}
+
+.project-link {
+  fill: $text-blue;
+
+  width: 30px;
 }
 
 .tech-stack-box {
@@ -191,9 +216,9 @@ img:hover {
   justify-content: space-around;
 }
 
-.project-spacer {
-  width: 5%;
-}
+// .project-spacer {
+//   width: 5%;
+// }
 
 @media (max-width: 600px) {
   .nav-xs {
