@@ -253,8 +253,7 @@ img:hover {
 }
 
 .title-box {
-  background: #cacaca;
-  color: #202022;
+  color: #00bbc9;
   font-size: 1.5rem;
   border-radius: 3px;
   padding: 5px 20px 1px 10px;
@@ -262,9 +261,25 @@ img:hover {
 }
 
 .description-box {
-  padding: 15px;
+  padding: 5px 15px;
   background: #00747c;
   color: #cacaca;
+  border-radius: 3px;
+}
+
+.tech-stack-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px;
 }
 
 .project-link-container {
@@ -282,18 +297,8 @@ img:hover {
   width: 30px;
 }
 
-.tech-stack-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.project-link:hover {
+  fill: #cacaca;
 }
 
 #contact {
@@ -311,8 +316,13 @@ img:hover {
 }
 
 .link-container a {
+  fill: #00bbc9;
   width: 20%;
   max-width: 80px;
+}
+
+.link-container a:hover {
+  fill: #cacaca;
 }
 
 @media (max-width: 1200px) {
