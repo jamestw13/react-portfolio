@@ -293,6 +293,10 @@ img:hover {
       flex-wrap: wrap;
 }
 
+#contact {
+  margin-bottom: 30px;
+}
+
 .link-container {
   padding: 10px;
   font-size: 40px;
@@ -301,6 +305,10 @@ img:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.link-container a {
+  width: 20%;
 }
 
 @media (max-width: 1200px) {
