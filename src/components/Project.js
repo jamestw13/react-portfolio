@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import scrollReveal from 'scrollreveal';
 
 function Project({ repo }) {
+  useEffect(() => {
+    scrollReveal().reveal('.project-container', {
+      delay: 300,
+      origin: 'left',
+      distance: '50px',
+      reset: false,
+    });
+    scrollReveal().reveal('.project-info', {
+      delay: 400,
+      origin: 'bottom',
+      distance: '50px',
+      reset: false,
+    });
+  }, []);
   return (
     <article className='project-container'>
       {/* Project Image */}

@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import scrollReveal from 'scrollreveal';
 
 function About() {
+  useEffect(() => {
+    scrollReveal().reveal('.about-text', {
+      delay: 200,
+      origin: 'bottom',
+      distance: '50px',
+      reset: false,
+    });
+    scrollReveal().reveal('.profile-img-container', {
+      delay: 300,
+      origin: 'right',
+      distance: '50px',
+      reset: false,
+    });
+  });
   return (
     <section id='about'>
       <h2>About Me</h2>

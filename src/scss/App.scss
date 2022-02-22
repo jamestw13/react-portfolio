@@ -1,8 +1,8 @@
 @import './variables';
 
-* {
-  box-sizing: border-box;
-}
+// * {
+//   box-sizing: border-box;
+// }
 
 body {
   background-color: $primary-background;
@@ -22,7 +22,11 @@ h2 {
 }
 
 section {
+  margin-top: 20px;
   width: 90%;
+  border: 1px solid $accent-color;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .nav-button {
@@ -170,8 +174,8 @@ img:hover {
 }
 
 .project-info {
-  width: 40%;
-  margin: 5px;
+  width: 43%;
+  // margin: 5px;
   z-index: 3;
 }
 
@@ -180,13 +184,12 @@ img:hover {
   color: $primary-background;
   font-size: 1.5rem;
   border-radius: 3px;
-  padding: 1px 15px;
+  padding: 5px 20px 1px 10px;
   margin: 5px;
 }
 
 .description-box {
   padding: 15px;
-
   background: $accent-color;
   color: $text-light;
 }
@@ -216,9 +219,14 @@ img:hover {
   justify-content: space-around;
 }
 
-// .project-spacer {
-//   width: 5%;
-// }
+@media (max-width: 1200px) {
+  #about-section {
+    flex-direction: column;
+  }
+  .profile-img-container {
+    width: 50%;
+  }
+}
 
 @media (max-width: 600px) {
   .nav-xs {
@@ -232,9 +240,7 @@ img:hover {
   .project-container:nth-child(odd) {
     flex-direction: column-reverse;
   }
-  #about-section {
-    flex-direction: column;
-  }
+
   .profile-img-container,
   .project-img-container,
   .project-info,
