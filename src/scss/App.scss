@@ -15,6 +15,7 @@ main {
   margin: auto;
   align-items: center;
   width: 90%;
+  max-width: 1200px;
 }
 
 header {
@@ -43,30 +44,38 @@ section {
 
 .nav-button {
   padding: 5px;
+  border-radius: 5px;
 
   &:hover {
-    background-color: $text-dark;
+    background-color: $text-blue;
   }
 }
+
 .menu-icon {
-  width: 50px;
-  height: 50px;
-  background-color: $primary-background;
+  width: 40px;
+  height: 40px;
+  background-color: $accent-color;
+  fill: $text-light;
 }
 
-.menu-icon-path {
-  fill: $accent-color;
+.menu {
+  position: absolute;
+  background-color: $accent-color;
+  padding: 5px 10px;
+  border: 1px solid $primary-background;
+
+  border-radius: 3px;
+  right: 30px;
 }
 
 #hero-section {
-  min-width: 600px;
+  margin-top: 100px;
   max-width: 900px;
-  margin: 100px 20px 20px 150px;
 }
 
 .spacer {
   height: 15px;
-  background-color: $accent-color;
+  background-color: $text-blue;
 }
 
 img {
@@ -94,9 +103,6 @@ img:hover {
   transition: transform ease-out 250ms;
 }
 
-#about {
-  margin-top: 100px;
-}
 #about-section {
   width: 100%;
   display: flex;
@@ -238,6 +244,7 @@ img:hover {
 
 .link-container a {
   width: 20%;
+  max-width: 80px;
 }
 
 @media (max-width: 1200px) {
@@ -257,6 +264,10 @@ img:hover {
     display: none;
   }
 
+  .about-text {
+    width: 95%;
+  }
+
   .project-container,
   .project-container:nth-child(odd) {
     flex-direction: column-reverse;
@@ -267,6 +278,10 @@ img:hover {
   .project-info,
   .project-spacer {
     width: 100%;
+  }
+
+  #hero-section {
+    font-size: 10px;
   }
 }
 

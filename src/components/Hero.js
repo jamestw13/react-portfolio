@@ -7,13 +7,13 @@ function Hero() {
       <pre>
         <code>
           {`
-            about: {
-              who:    "TJ James",
-              what:   "Full Stack Developer",
-              when:   "2021 - Present",
-              where:  "Madison, WI,
-              why:    "Better living through 1s and 0s"
-            }
+  about: {
+    who:    "TJ James",
+    what:   "Full Stack Developer",
+    when:   "2021 - Present",
+    where:  "Madison, WI,
+    why:    "Better living through 1s and 0s"
+  }
             `}
         </code>
       </pre>

@@ -21,6 +21,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
+  max-width: 1200px;
 }
 
 header {
@@ -54,31 +55,37 @@ section {
 
 .nav-button {
   padding: 5px;
+  border-radius: 5px;
 }
 
 .nav-button:hover {
-  background-color: #878787;
+  background-color: #00bbc9;
 }
 
 .menu-icon {
-  width: 50px;
-  height: 50px;
-  background-color: #202022;
+  width: 40px;
+  height: 40px;
+  background-color: #00747c;
+  fill: #cacaca;
 }
 
-.menu-icon-path {
-  fill: #00747c;
+.menu {
+  position: absolute;
+  background-color: #00747c;
+  padding: 5px 10px;
+  border: 1px solid #202022;
+  border-radius: 3px;
+  right: 30px;
 }
 
 #hero-section {
-  min-width: 600px;
+  margin-top: 100px;
   max-width: 900px;
-  margin: 100px 20px 20px 150px;
 }
 
 .spacer {
   height: 15px;
-  background-color: #00747c;
+  background-color: #00bbc9;
 }
 
 img {
@@ -114,10 +121,6 @@ img:hover {
   transition: -webkit-transform ease-out 250ms;
   transition: transform ease-out 250ms;
   transition: transform ease-out 250ms, -webkit-transform ease-out 250ms;
-}
-
-#about {
-  margin-top: 100px;
 }
 
 #about-section {
@@ -309,6 +312,7 @@ img:hover {
 
 .link-container a {
   width: 20%;
+  max-width: 80px;
 }
 
 @media (max-width: 1200px) {
@@ -330,6 +334,9 @@ img:hover {
   .nav-sm {
     display: none;
   }
+  .about-text {
+    width: 95%;
+  }
   .project-container,
   .project-container:nth-child(odd) {
     -webkit-box-orient: vertical;
@@ -342,6 +349,9 @@ img:hover {
   .project-info,
   .project-spacer {
     width: 100%;
+  }
+  #hero-section {
+    font-size: 10px;
   }
 }
 

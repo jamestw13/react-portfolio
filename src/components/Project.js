@@ -71,7 +71,6 @@ function Project({ repo }) {
           </svg>
         </div>
       </div>
-      <div className='project-spacer'></div>
     </article>
   );
 }
