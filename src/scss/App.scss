@@ -146,6 +146,9 @@ img:hover {
   .description-box {
     text-align: right;
   }
+  .project-link-container {
+    justify-content: flex-end;
+  }
 
   &:nth-child(odd) {
     flex-direction: row-reverse;
@@ -153,6 +156,9 @@ img:hover {
     .title-box,
     .description-box {
       text-align: left;
+    }
+    .project-link-container {
+      justify-content: flex-start;
     }
   }
 }
@@ -203,12 +209,12 @@ img:hover {
 
 .project-link-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .project-link {
   fill: $text-blue;
-
+  margin: 10px;
   width: 30px;
 }
 

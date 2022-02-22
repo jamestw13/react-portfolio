@@ -196,6 +196,12 @@ img:hover {
   text-align: right;
 }
 
+.project-container .project-link-container {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .project-container:nth-child(odd) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -206,6 +212,12 @@ img:hover {
 .project-container:nth-child(odd) .title-box,
 .project-container:nth-child(odd) .description-box {
   text-align: left;
+}
+
+.project-container:nth-child(odd) .project-link-container {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .project-img-container {
@@ -256,12 +268,14 @@ img:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .project-link {
   fill: #00bbc9;
+  margin: 10px;
   width: 30px;
 }
 
