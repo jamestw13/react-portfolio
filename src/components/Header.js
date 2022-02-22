@@ -10,7 +10,7 @@ function Header() {
   return (
     <header>
       <h1>TJ James</h1>
-      <nav className='nav-xs'>
+      <nav className='nav nav-xs'>
         <svg
           className='menu-icon'
           xmlns='http://www.w3.org/2000/svg'
@@ -35,7 +35,7 @@ function Header() {
       </nav>
 
       {/* Medium and larger view */}
-      <nav className='nav-sm'>
+      <nav className='nav nav-sm'>
         {views.map(view => (
           <div className='nav-button' key={view}>
             <a href={`#${view}`}>{view}</a>

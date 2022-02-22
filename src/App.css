@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: #202022;
   color: #cacaca;
@@ -16,6 +21,23 @@ main {
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px;
+  background-color: #00747c;
+  z-index: 5;
 }
 
 h2 {
@@ -46,20 +68,6 @@ section {
 
 .menu-icon-path {
   fill: #00747c;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5px 10px;
-  margin: 0 20px;
 }
 
 #hero-section {
@@ -106,6 +114,10 @@ img:hover {
   transition: -webkit-transform ease-out 250ms;
   transition: transform ease-out 250ms;
   transition: transform ease-out 250ms, -webkit-transform ease-out 250ms;
+}
+
+#about {
+  margin-top: 100px;
 }
 
 #about-section {
