@@ -23,6 +23,16 @@ function Contact() {
           </svg>
         </a>
       </div>
+      <p>
+        Or peruse my &nbsp;
+        <a
+          className='resume-link'
+          href='https://drive.google.com/file/d/1lam91ODcXhAN7veopjuMaaD82VbO9RQuITy-7U6KVvo/view'
+          download
+        >
+          resume
+        </a>
+      </p>
     </section>
   );
 }

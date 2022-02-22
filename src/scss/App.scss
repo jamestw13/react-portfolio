@@ -43,7 +43,7 @@ section {
 }
 
 .nav-button {
-  padding: 5px;
+  padding: 15px;
   border-radius: 5px;
 
   &:hover {
@@ -246,12 +246,15 @@ img:hover {
   justify-content: space-around;
 }
 
-.link-container a {
+#contact a {
   fill: $text-blue;
   width: 20%;
   max-width: 80px;
+  color: $text-blue;
+
   &:hover {
     fill: $text-light;
+    color: $text-light;
   }
 }
 

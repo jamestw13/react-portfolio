@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function Header() {
-  const views = ['About', 'Projects', 'Contact', 'Resume'];
+  const views = ['About', 'Projects', 'Contact'];
   const [menuState, setMenuState] = useState(false);
 
   function toggleMenu() {
