@@ -1,7 +1,7 @@
 {
-  "name": "jamestw13.github.io",
+  "name": "tj-james.com",
   "version": "0.1.0",
-  "homepage": "https://jamestw13.github.io/react-portfolio/",
+  "homepage": "https://tj-james.com",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",
