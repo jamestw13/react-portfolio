@@ -30,6 +30,16 @@ header {
   z-index: 5;
 }
 
+#logo-div {
+  background-color: red;
+}
+#tj-logo {
+  border: 2px solid $primary-background;
+  height: 80px;
+  fill: $primary-background;
+  margin: 5px;
+}
+
 h2 {
   color: $text-blue;
 }
