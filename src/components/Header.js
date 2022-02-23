@@ -26,7 +26,6 @@ function Header() {
           <div className='menu'>
             {views.map(view => (
               <div className='nav-button' key={view}>
-                <div></div>
                 <a href={`#${view}`}>{view}</a>
               </div>
             ))}
