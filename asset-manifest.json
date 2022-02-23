@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.40ca1bdc.css",
-    "main.js": "/static/js/main.f5463b79.js",
+    "main.css": "/static/css/main.d7340561.css",
+    "main.js": "/static/js/main.3b91188e.js",
     "static/js/787.451fa1f2.chunk.js": "/static/js/787.451fa1f2.chunk.js",
     "static/media/boids-quadtree.gif": "/static/media/boids-quadtree.75c4d387c452b771ce69.gif",
     "static/media/composite.png": "/static/media/composite.aa71cfc255b836258a07.png",
@@ -13,14 +13,13 @@
     "static/media/still-good.png": "/static/media/still-good.5b5686ea294247ef9f82.png",
     "static/media/budget-tracker.png": "/static/media/budget-tracker.53b34f72b5e505c9e55f.png",
     "static/media/resume.png": "/static/media/resume.8fac41c7342092d4c308.png",
-    "static/media/TJLogo.jpg": "/static/media/TJLogo.fdab76e60a6f22344b12.jpg",
     "index.html": "/index.html",
-    "main.40ca1bdc.css.map": "/static/css/main.40ca1bdc.css.map",
-    "main.f5463b79.js.map": "/static/js/main.f5463b79.js.map",
+    "main.d7340561.css.map": "/static/css/main.d7340561.css.map",
+    "main.3b91188e.js.map": "/static/js/main.3b91188e.js.map",
     "787.451fa1f2.chunk.js.map": "/static/js/787.451fa1f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40ca1bdc.css",
-    "static/js/main.f5463b79.js"
+    "static/css/main.d7340561.css",
+    "static/js/main.3b91188e.js"
   ]
 }
