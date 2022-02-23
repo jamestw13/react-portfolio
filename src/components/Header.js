@@ -23,9 +23,13 @@ function Header() {
         {menuState && (
           <div className='menu'>
             {views.map(view => (
-              <div className='nav-button' key={view}>
-                <a href={`#${view}`}>{view}</a>
-              </div>
+              <button
+                onClick={window.location.assign(`#${view}`)}
+                className='nav-button'
+                key={view}
+              >
+                <a>{view}</a>
+              </button>
             ))}
           </div>
         )}
