@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Logo from '../assets/icons/Logo';
 
 function Header() {
   const views = ['about', 'projects', 'contact'];
@@ -9,7 +10,8 @@ function Header() {
   }
   return (
     <header>
-      <h1>TJ James</h1>
+      <Logo />
+
       <nav className='nav nav-xs'>
         <svg
           className='menu-icon'
