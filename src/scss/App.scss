@@ -84,22 +84,6 @@ section {
   display: flex;
 }
 
-#about-code {
-  font-family: monospace;
-  overflow: hidden;
-  animation: typing 3.5s steps(40, end);
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
 .spacer {
   height: 15px;
   background-color: $text-blue;
