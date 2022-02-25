@@ -42,15 +42,7 @@ function Project({ repo }) {
         <div className='project-link-container'>
           <svg
             className='project-link'
-            onClick={() =>
-              window
-                .open(
-                  repo.deployment ||
-                    `https://jamestw13.github.io/${repo.gitlink}/`,
-                  '_blank'
-                )
-                .focus()
-            }
+            onClick={() => window.open(repo.deployment).focus()}
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 512 512'
           >
