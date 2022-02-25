@@ -47,6 +47,7 @@ module.exports = [
     id: 4,
     name: 'Raycasting Demo',
     gitLink: 'raycasting-demo',
+    deployment: 'https://jamestw13.github.io/raycasting-demo/',
     image: 'raycasting-demo.gif',
     description:
       'Employing the use of raycasting for edge/boundary detection and to create a first-person visual simulation of the environment.',
@@ -56,6 +57,7 @@ module.exports = [
     id: 5,
     name: 'Taco Loca-tor',
     gitLink: 'Taco-Loca-tor',
+    deployment: 'https://jamestw13.github.io/Taco-Loca-tor/',
     image: 'Taco-Loca-tor.png',
     description:
       'Static web application using third-party APIs to help us find what we really need... Tacos!',
@@ -65,6 +67,7 @@ module.exports = [
     id: 6,
     name: 'Boids w/ Quadtree Optimization',
     gitLink: 'boids-quadtree',
+    deployment: 'https://jamestw13.github.io/boids-quadtree/',
     image: 'boids-quadtree.gif',
     description:
       'The classic Boid simulation, but with a visual quadtree data structure to vastly increase performance.',
@@ -74,6 +77,7 @@ module.exports = [
     id: 7,
     name: 'Photography Portfolio',
     gitLink: 'photography-portfolio',
+    deployment: 'https://jamestw13.github.io/photography-portfolio/',
     image: 'photography-portfolio.png',
     description: 'A single-page application portfolio site for a photographer.',
     techStack: ['React', 'JavaScript', 'HTML', 'CSS'],

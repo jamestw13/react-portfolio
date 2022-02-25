@@ -4,9 +4,9 @@ function Hero() {
   return (
     <section id='hero-section'>
       <div className='spacer'></div>
-      <pre>
-        <code>
-          {`
+
+      <p id='about-code'>
+        {`
   about: {
     who:    "TJ James",
     what:   "Full Stack Developer",
@@ -15,8 +15,7 @@ function Hero() {
     why:    "Better living through 1s and 0s"
   }
             `}
-        </code>
-      </pre>
+      </p>
       <div className='spacer'></div>
     </section>
   );
