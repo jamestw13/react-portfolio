@@ -56,7 +56,7 @@ function About() {
         <div className='profile-img-container'>
           <img
             className='profile-img'
-            src={require('../assets/images/tj-pic.jpg')}
+            src={require('../assets/images/tj-headshot.png')}
             alt=''
           />
         </div>
