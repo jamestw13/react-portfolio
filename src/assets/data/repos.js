@@ -7,24 +7,17 @@ module.exports = [
     image: 'still-good.png',
     description:
       'An kitchen inventory management application specifically to help users track product expiration dates',
-    techStack: [
-      'React',
-      'MongoDB',
-      'GraphQL',
-      'ExpressJS',
-      'NodeJS',
-      'Material-UI',
-    ],
+    techStack: ['React', 'MongoDB', 'GraphQL', 'ExpressJS', 'NodeJS', 'Material-UI'],
   },
   {
     id: 2,
-    name: 'Budget Tracker',
-    gitLink: 'budget-tracker',
-    deployment: 'https://gentle-anchorage-42130.herokuapp.com/',
+    name: 'Brass Knuckles',
+    gitLink: 'brass-knuckles',
+    deployment: 'https://brassknucklesquintet.com/',
     image: 'budget-tracker.png',
     description:
-      'An app to help a user visually track spending an income over time.',
-    techStack: ['ExpressJS', 'MongoDB', 'NodeJS', 'Heroku'],
+      'Musical artist website. I actually perform for this group. Check out the site and check out the band.',
+    techStack: ['SPA', 'React', 'Personalized CSS'],
   },
   {
     id: 3,
@@ -32,16 +25,8 @@ module.exports = [
     gitLink: 'work-it-done',
     deployment: 'https://warm-eyrie-07140.herokuapp.com/',
     image: 'work-it-done.png',
-    description:
-      'Versatile project management software with a drag and drop interface.',
-    techStack: [
-      'JQueryUI',
-      'JQuery',
-      'MySQL',
-      'Handlebars',
-      'NodeJS',
-      'ExpressJS',
-    ],
+    description: 'Versatile project management software with a drag and drop interface.',
+    techStack: ['JQueryUI', 'JQuery', 'MySQL', 'Handlebars', 'NodeJS', 'ExpressJS'],
   },
   {
     id: 4,
@@ -59,8 +44,7 @@ module.exports = [
     gitLink: 'Taco-Loca-tor',
     deployment: 'https://jamestw13.github.io/Taco-Loca-tor/',
     image: 'Taco-Loca-tor.png',
-    description:
-      'Static web application using third-party APIs to help us find what we really need... Tacos!',
+    description: 'Static web application using third-party APIs to help us find what we really need... Tacos!',
     techStack: ['HTML', 'JavaScript'],
   },
   {
