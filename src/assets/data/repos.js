@@ -14,7 +14,7 @@ module.exports = [
     name: 'Brass Knuckles',
     gitLink: 'brass-knuckles',
     deployment: 'https://brassknucklesquintet.com/',
-    image: 'budget-tracker.png',
+    image: 'brass-knuckles.png',
     description:
       'Musical artist website. I actually perform for this group. Check out the site and check out the band.',
     techStack: ['SPA', 'React', 'Personalized CSS'],
