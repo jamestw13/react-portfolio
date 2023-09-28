@@ -1,13 +1,13 @@
 module.exports = [
   {
     id: 1,
-    name: 'StillGood',
-    gitLink: 'still-good',
-    deployment: 'https://pacific-bayou-24755.herokuapp.com/',
-    image: 'still-good.png',
+    name: 'Starfield Resource Calculator',
+    gitLink: 'starfield-calculator',
+    deployment: 'https://starfieldresourcecalculator',
+    image: 'resource-calc.png',
     description:
-      'An kitchen inventory management application specifically to help users track product expiration dates',
-    techStack: ['React', 'MongoDB', 'GraphQL', 'ExpressJS', 'NodeJS', 'Material-UI'],
+      'A simple quality-of-life app to help players of Starfield predict the amount of resources are needed to build things in-game.',
+    techStack: ['React', 'Google fonts', 'Google material icons'],
   },
   {
     id: 2,
@@ -19,6 +19,17 @@ module.exports = [
       'Musical artist website. I actually perform for this group. Check out the site and check out the band.',
     techStack: ['SPA', 'React', 'Personalized CSS'],
   },
+  {
+    id: 8,
+    name: 'StillGood',
+    gitLink: 'still-good',
+    deployment: 'https://pacific-bayou-24755.herokuapp.com/',
+    image: 'still-good.png',
+    description:
+      'An kitchen inventory management application specifically to help users track product expiration dates',
+    techStack: ['React', 'MongoDB', 'GraphQL', 'ExpressJS', 'NodeJS', 'Material-UI'],
+  },
+
   {
     id: 3,
     name: 'Work It Done',
